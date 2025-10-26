@@ -1,4 +1,4 @@
-name: ⚡ CI Spring Boot Simple
+name: ⚡ CITP 8 : Spring @RestController
 
 on:
   push:
