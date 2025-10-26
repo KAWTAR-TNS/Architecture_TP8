@@ -2,9 +2,9 @@ name: ⚡ CI_TP_8_:_Spring_@RestController
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [main, master, develop]
   pull_request:
-    branches: [ main ]
+    branches: [main, master, develop]
 
 jobs:
   test:

@@ -22,4 +22,10 @@ public class Compte {
 
     @Enumerated(EnumType.STRING)
     private TypeCompte type;
+
+    public Compte(Double solde, Date dateCreation, TypeCompte type) {
+        this.solde = solde;
+        this.dateCreation = dateCreation;
+        this.type = type;
+    }
 }
