@@ -1,4 +1,4 @@
-name: ⚡ CITP 8 : Spring @RestController
+name: ⚡ CI TP 8 : Spring @RestController
 
 on:
   push:
