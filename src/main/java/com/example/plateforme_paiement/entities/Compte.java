@@ -1,10 +1,11 @@
 package com.example.plateforme_paiement.entities;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import jakarta.persistence.Id;
 
 
-import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -12,12 +13,12 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Compte {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private double solde;
 
-    @Temporal(TemporalType.DATE)
     private Date dateCreation;
 
     @Enumerated(EnumType.STRING)
@@ -28,4 +29,5 @@ public class Compte {
         this.dateCreation = dateCreation;
         this.type = type;
     }
+
 }
